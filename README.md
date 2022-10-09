@@ -1,3 +1,5 @@
+# MIPS32 Assembler
+
 Assembles select MIPS32 instructions into machine code.
 
 Working instructions:

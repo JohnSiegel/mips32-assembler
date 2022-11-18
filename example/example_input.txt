@@ -1,11 +1,4 @@
-# Spring 2019 Full Assembler
-# Test file 8
-# Tests:  - pseudos:  move, blt, li, lw
-#         - integer data segment
-#         - full-line comments
-#
-# Maximum points:  11.0
-
+# example input
 .data
 val01:  .word    839293
 val02:  .word    903923

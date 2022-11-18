@@ -7,21 +7,27 @@ enum _InstructionFormat
     S_T_I,
     T_S_I,
     T_I,
-    T_I_S
+    T_I_S,
+    S_T,
+    S_I,
+    D_T_SA,
+    J,
+    SRAV,
+    SYS
 };
 
 typedef enum _InstructionFormat InstructionFormat;
 
 struct _Opcode
 {
-    const char *Mnemonic;
-    const char *Binary;
-    const char *Funct;
-    InstructionFormat Format;
+    char *mnemonic;
+    char *binary;
+    char *funct;
+    InstructionFormat format;
 };
 
 typedef struct _Opcode Opcode;
 
-const Opcode *FindOpcode(const char *const Mnemonic);
+Opcode *findOpcode(const char *const mnemonic);
 
 #endif
